@@ -1,0 +1,41 @@
+label{
+    width: 100%;
+    input,
+    select,
+    textarea{
+        all: unset;
+        min-height: 35px;
+        border-radius: 2%;
+        padding:  0 0.5rem;
+        border: 1px solid @color[light-gray];
+        font-size: 0.85rem;
+        display: grid;
+        place-items: center;
+        letter-spacing: 1px;
+        width: calc(100% - 1rem);
+        background: none;
+        &:not(input, textarea){
+            cursor: pointer;
+        }
+    }
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: @color[dark-blue];
+    color: @color[white-base];
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type="reset"]{
+    border: none;
+    background-color: @color[light-gray];
+    color: @color[black-base];
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}

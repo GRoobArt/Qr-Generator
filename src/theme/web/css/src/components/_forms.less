@@ -1,0 +1,44 @@
+@import '../_variables.less';
+
+.card{
+    .qrgenerator{
+        padding: 1rem 2rem;
+        background-color: @color[light-gray];
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        iframe{
+            border: none;
+        }
+    }
+
+    form{   
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        label{
+            width: 65%;
+            text-align: left;
+            font-size: 0.75rem;
+            &:first-child{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &:not(:first-child){
+                width: calc(100% / 3 - 0.4rem);
+            }
+        }
+        input{
+            &[type="submit"]{
+                width:44%;
+            } 
+            &[type="reset"]{
+                width:44%;
+            }    
+        }
+    }
+}

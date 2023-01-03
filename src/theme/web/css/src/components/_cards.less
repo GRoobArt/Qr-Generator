@@ -1,0 +1,19 @@
+@import '../_variables.less';
+
+.card{
+    max-width: calc(325px - 2rem);
+    text-align: center;
+    background-color: @color[white-base];
+    border-radius: 20px;
+    padding: 1rem;
+
+    > .content-info{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        p{
+            color: @color[grayish-blue];
+        }
+    }
+}
